@@ -7,6 +7,17 @@
     --blue-colour: hsla(222, 80%, 53%, 1);
     --primary-colour: hsla(311, 80%, 53%, 1);
 
+    --red-colour-dark: hsla(360, 100%, 30%, 1);
+    --secondary-colour-dark: hsla(39, 100%, 30%, 1);
+    --green-colour-dark: hsla(133, 100%, 30%, 1);
+    --blue-colour-dark: hsla(222, 100%, 30%, 1);
+    --primary-colour-dark: hsla(311, 100%, 30%, 1);
+
+    --red-colour-for-hero-box-image: hsla(360, 50%, 20%, 0.7);
+    --secondary-colour-for-hero-box-image: hsla(39, 50%, 20%, 0.7);
+    --green-colour-for-hero-box-image: hsla(133, 50%, 20%, 0.7);
+    --blue-colour-for-hero-box-image: hsla(222, 50%, 20%, 0.7);
+    --primary-colour-for-hero-box-image: hsla(311, 50%, 20%, 0.7);
     /*==============================  PADDING  ==============================*/
     --p-ss: 0.5rem;
     --p-s: 1rem;
@@ -71,38 +82,6 @@
     --brad-xl: 1rem;
 }
 
-
-
-/*==============================  COMPONENTS  ==============================*/
-/*=========================  BUTTON  =========================*/
-.btn {
-    border-radius: var(--brad-ss);
-    padding: var(--p-s);
-    font-size: var(--font-s);
-    text-transform: uppercase;
-    margin: var(--m-m);
-    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 100deg);
-    border: none;
-}
-
-
-/*=========================  CARD  =========================*/
-.card {
-    background-color: white;
-    border-radius: var(--brad-s);
-    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 100deg);
-    color: #4a4a4a;
-    max-width: 100%;
-    position: relative;
-    margin: var(--m-ss);
-    padding: var(--p-ss);
-
-}
-
-
-
-
-
 * {
     margin: 0;
     padding: 0;
@@ -112,6 +91,7 @@
 
 }
 
+/*=========================  HEADER && HERO-BOX && HELPERS  =========================*/
 .hero-text {
     font-weight: 800;
     /*margin: var(--m-s);*/
@@ -119,62 +99,23 @@
     padding-left: 1.5rem;
     padding-bottom: 1.5rem;
     line-height: 60px;
+    color: peachpuff;
 }
 
 .hero-box {
-    background: linear-gradient(230deg, var(--red-colour), var(--green-colour), var(--primary-colour), var(--secondary-colour), var(--blue-colour));
-    background-size: 1000% 1000%;
+    /*background: linear-gradient(230deg, var(--red-colour), var(--green-colour), var(--primary-colour), var(--secondary-colour), var(--blue-colour));*/
+    background-image: linear-gradient(230deg, var(--red-colour-for-hero-box-image), var(--green-colour-for-hero-box-image), var(--primary-colour-for-hero-box-image), var(--secondary-colour-for-hero-box-image), var(--blue-colour-for-hero-box-image)), url(https://d2gz8p6ykzvfb0.cloudfront.net/storage/v4h0B8oRRETVfrlceC0vbGziNSzoX68dI3q0jwoZ.jpg);
+    /*background-size: 1000% 1000%;*/
     height: 100vh;
     display: block;
     align-items: center;
     justify-content: center;
-    -webkit-animation: lander 50s ease infinite;
-    -moz-animation: lander 50s ease infinite;
-    -o-animation: lander 50s ease infinite;
-    animation: lander 50s ease infinite;
+    background-size: 100%;
+    background-position: center;
+    animation: lander 100s ease infinite;
 }
 
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
 
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
 
 @keyframes lander {
     0% {
@@ -207,91 +148,8 @@
     justify-self: center;
 }*/
 
-.contact-card {
-    background-color: white;
-    border-radius: var(--brad-s);
-    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.2);
-    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);
-
-    color: #4a4a4a;
-    max-width: 80%;
-    position: relative;
-    margin: var(--m-ss);
-    padding: var(--p-ss);
-    display: inline-block;
-    align-items: end;
-    justify-content: end;
-    top: 10rem;
-    -webkit-animation: transform 10s ease infinite;
-    -moz-animation: transform 10s ease infinite;
-    -o-animation: transform 10s ease infinite;
-    animation: transform 10s ease infinite;
-}
-
-/*@-webkit-keyframes transform {
-    0% {
-        transform: rotate(100deg);
-    }
-
-    50% {
-        transform: rotate(100deg);
-    }
-
-    100% {
-        transform: rotate(100deg);
-    }
-
-}
-
-@-moz-keyframes transform {
-    0% {
-        transform: rotate(100deg);
-    }
 
 
-    50% {
-        transform: rotate(100deg);
-    }
-
-
-    100% {
-        transform: rotate(100deg);
-    }
-
-}
-
-@-o-keyframes transform {
-    0% {
-        transform: rotate(100deg);
-    }
-
-
-    50% {
-        transform: rotate(100deg);
-    }
-
-
-    100% {
-        transform: rotate(100deg);
-    }
-
-}*/
-/*@keyframes transform {
-    0% {
-        transform: scale(1.2);
-    }
-
-
-    50% {
-        transform: scale(1.5);
-    }
-
-    100% {
-        transform: scale(1.7);
-    }*/
-
-
-}
 
 
 
@@ -338,11 +196,11 @@ nav ul li:nth-child(3) {
     background: var(--secondary-colour);
     z-index: 1;
     /*transform: rotate(6deg) translatey(10px);*/
-    animation: tom 20s alternate infinite;
+    animation: request-a-quota-animation 20s alternate infinite;
 
 }
 
-@keyframes tom {
+@keyframes request-a-quota-animation {
     0% {
 
 
@@ -377,6 +235,11 @@ img {
     border-radius: var(--brad-s);
 }
 
+.hero-text:not(#contact-us-swinging-billboard) {
+    height: 2rem;
+
+}
+
 .hidden {
     display: none;
 }
@@ -391,6 +254,53 @@ img {
 
 
 
+
+
+/*==============================  COMPONENTS  ==============================*/
+/*=========================  BUTTON  =========================*/
+.btn {
+    border-radius: var(--brad-ss);
+    padding: var(--p-s);
+    font-size: var(--font-s);
+    text-transform: uppercase;
+    margin: var(--m-m);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 100deg);
+    border: none;
+}
+
+
+/*=========================  CARD  =========================*/
+.card {
+    background-color: white;
+    border-radius: var(--brad-s);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 100deg);
+    color: #4a4a4a;
+    max-width: 100%;
+    position: relative;
+    margin: var(--m-ss);
+    padding: var(--p-ss);
+
+}
+
+/*=========================  CONTACT && FORM  =========================*/
+.contact-card {
+    background-color: white;
+    border-radius: var(--brad-s);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.2);
+    box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);
+
+    color: #4a4a4a;
+    max-width: 80%;
+    position: relative;
+    margin: var(--m-ss);
+    padding: var(--p-ss);
+    display: inline-block;
+    align-items: end;
+    justify-content: end;
+    top: 10rem;
+
+    animation: transform 10s ease infinite;
+}
 
 .form-control input[type='text'],
 .form-control input[type='email'],
@@ -426,43 +336,7 @@ img {
 }*/
 
 
-.news-letter-check {
-    background: hsla(133, 100%, 53%, 0.3);
-    border-radius: var(--brad-ss);
-    margin: var(--p-ss);
-    font-size: 0.9rem;
-
-    color: aliceblue;
-}
-
-
-.showcase-form:last-child:hover:not(.text-area-placeholder) {
-    background: rgba(255, 0, 0, 0.01);
-    border-radius: var(--brad-ss);
-    transition: background 0.5s
-}
-
-
-/*.drop-us-a-line-hover {
-    border-radius: var(--brad-s);
-    transition: background 0.5s;
-    margin: var(--m-ss);
-
-}
-*/
-
-.drop-us-a-line-hover:hover {
-    background: var(--secondary-colour);
-    border-radius: var(--brad-ss);
-    color: #fff;
-    transition: background 0.5s
-}
-
-
-
-
-
-
+/*=========================  HELPERS  =========================*/
 .has-fancy-gradient {
     background: linear-gradient(230deg, var(--red-colour), var(--green-colour), var(--primary-colour), var(--secondary-colour), var(--blue-colour));
     background-size: 1000% 1000%;
@@ -474,48 +348,6 @@ img {
     -moz-animation: lander 50s ease infinite;
     -o-animation: lander 50s ease infinite;
     animation: lander 50s ease infinite;
-}
-
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
 }
 
 @keyframes lander {
@@ -534,59 +366,10 @@ img {
 
 .contact-card.has-animation-rotate {
     height: auto;
-    /* -webkit-animation: transform 10s ease infinite;
- -moz-animation: transform 10s ease infinite;
- -o-animation: transform 10s ease infinite;*/
+    -webkit-animation: transform 10s alternate infinite;
+    -moz-animation: transform 10s alternate infinite;
+    -o-animation: transform 10s alternate infinite;
     animation: transform 10s alternate infinite;
-}
-
-@-webkit-keyframes transform {
-    0% {
-        transform: rotate(100deg);
-    }
-
-    50% {
-        transform: rotate(100deg);
-    }
-
-    100% {
-        transform: rotate(100deg);
-    }
-
-}
-
-@-moz-keyframes transform {
-    0% {
-        transform: rotate(100deg);
-    }
-
-
-    50% {
-        transform: rotate(100deg);
-    }
-
-
-    100% {
-        transform: rotate(100deg);
-    }
-
-}
-
-@-o-keyframes transform {
-    0% {
-        transform: rotate(100deg);
-    }
-
-
-    50% {
-        transform: rotate(100deg);
-    }
-
-
-    100% {
-        transform: rotate(100deg);
-    }
-
 }
 
 @keyframes transform {
@@ -613,76 +396,13 @@ img {
     display: block;
     align-items: center;
     justify-content: center;
-    -webkit-animation: lander 50s ease infinite;
-    -moz-animation: lander 50s ease infinite;
-    -o-animation: lander 50s ease infinite;
-    /*animation: lander 50s ease infinite;*/
-    animation:
-        /*lander*/
-        contact-swing 20s alternate infinite;
+    animation: contact-swing 20s alternate infinite;
 
 }
 
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
 
 @keyframes contact-swing {
 
-    /*0% {
-    background-position: 0% 96%;
-    transform: rotate(-3deg);
-}
-
-50% {
-    background-position: 100% 5%;
-    transform: rotate(3deg);
-
-}
-
-100% {
-    background-position: 0% 96%;
-    transform: rotate(-3deg);
-
-}*/
     0% {
         background-position: 0% 96%;
         transform: rotate(-5deg) translate(50px);
@@ -704,128 +424,21 @@ img {
 .btn.is-hero-boxcta.has-fancy-gradient {
     height: auto;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);
-    -webkit-animation: lander 50s ease infinite;
-    -moz-animation: lander 50s ease infinite;
-    -o-animation: lander 50s ease infinite;
-    animation: lander, contact-rotate, typ, ctas 30s alternate infinite;
-}
-
-
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-
-@keyframes ctas {
-    0% {
-        background-position: 0% 96%;
-        border: 3px solid var(--blue-colour);
-    }
-
-    50% {
-        background-position: 100% 5%;
-        border: 0px solid var(--secondary-colour);
-
-    }
-
-    100% {
-        background-position: 0% 96%;
-        border: 3px solid var(--red-colour);
-
-    }
 }
 
 .btn.is-hero-box-learn-more.has-fancy-gradient {
     height: auto;
     box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);
-    -webkit-animation: lander 50s ease infinite;
-    -moz-animation: lander 50s ease infinite;
-    -o-animation: lander 50s ease infinite;
-    animation: lander, contact-rotate, typ 300s alternate infinite;
+    /*-webkit-animation: lander 50s ease infinite;
+-moz-animation: lander 50s ease infinite;
+-o-animation: lander 50s ease infinite;
+animation: lander,
+contact-rotate,
+typ 300s alternate infinite;
+*/
 }
 
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-
-@keyframes typ {
+/*@keyframes typ {
     0% {
         background-position: 0% 96%;
         transform: translatex(0px) translatey(0px) rotate(0deg);
@@ -842,7 +455,7 @@ img {
         transform: translatex(-300) translatey(-300) rotate(-200deg);
 
     }
-}
+}*/
 
 
 
@@ -850,27 +463,29 @@ img {
 .btn.is-for-contact-card.has-fancy-gradient {
     height: auto;
     padding: var(--p-ss);
-    margin: 0.5rem 0 9px 0 !important;
-    /*margin: 5rem !important;*/
+    /*margin: 0.5rem 0 9px 0 !important;*/
+    margin: 0 9rem !important;
     font-size: 0.8rem;
     border-radius: var(--brad-ss);
     display: inline-flex;
-    align-items: center;
-    justify-content: center;
+    /* align-items: center;
+ justify-content: center;*/
 
 }
 
+
+
+/*==============================  NAVBAR && HELPERS==============================*/
 .navbar {
     display: inline-flex;
 }
 
 
-.hero-text:not(#tv) {
-    height: 2rem;
 
-}
 
-#tv {
+/*=========================  PSEUDO CLASSES => ANIMATIONS  =========================*/
+
+#contact-us-swinging-billboard {
     position: relative;
     width: 150px;
     height: 100px;
@@ -888,54 +503,11 @@ img {
     font-size: var(--font-s);
     background: linear-gradient(230deg, var(--red-colour), var(--green-colour), var(--primary-colour), var(--secondary-colour), var(--blue-colour));
     background-size: 1000% 1000%;
-    -webkit-animation: lander 50s ease infinite;
-    -moz-animation: lander 50s ease infinite;
-    -o-animation: lander 30s ease infinite;
+
     animation: lander,
         contact-rotate 20s alternate infinite;
 }
 
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
 
 @keyframes contact-rotate {
     0% {
@@ -955,7 +527,7 @@ img {
     }
 }
 
-#tv:before {
+#contact-us-swinging-billboard:before {
     content: "contact us today😊💛!";
     /*box-shadow: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);*/
 
@@ -971,53 +543,10 @@ img {
     background-size: 1000% 1000%;
     /*background: linear-gradient(230deg, var(--red-colour), var(--green-colour), var(--primary-colour), var(--secondary-colour), var(--blue-colour));*/
     background-size: 1000% 1000%;
-    -webkit-animation: lander 50s ease infinite;
-    -moz-animation: lander 50s ease infinite;
-    -o-animation: lander 50s ease infinite;
+
     animation: lander 20s ease infinite;
 }
 
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
 
 @keyframes lander {
     0% {
@@ -1146,7 +675,7 @@ img {
 
 }
 
-#pointer {
+#swinging-rod {
     width: 10px;
     height: 65px;
     position: relative;
@@ -1164,74 +693,16 @@ img {
 
     align-items: center;
     justify-content: center;
-    -webkit-animation: lander 50s ease infinite;
-    -moz-animation: lander 50s ease infinite;
-    -o-animation: lander 10s ease infinite;
+
     animation:
-        anime 20s alternate infinite;
+        swinging-rod-anime 20s alternate infinite;
 
 }
 
-@-webkit-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
 
-    50% {
-        background-position: 100% 5%
-    }
 
-    100% {
-        background-position: 0% 96%
-    }
-}
+@keyframes swinging-rod-anime {
 
-@-moz-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@-o-keyframes lander {
-    0% {
-        background-position: 0% 96%
-    }
-
-    50% {
-        background-position: 100% 5%
-    }
-
-    100% {
-        background-position: 0% 96%
-    }
-}
-
-@keyframes anime {
-
-    /*0% {
-    background-position: 0% 96%;
-    transform: rotate(-3deg);
-}
-
-50% {
-    background-position: 100% 5%;
-    transform: rotate(3deg);
-
-}
-
-100% {
-    background-position: 0% 96%;
-    transform: rotate(-3deg);
-
-}*/
     0% {
         background-position: 0% 96%;
         transform: rotate(-20deg)
@@ -1255,29 +726,57 @@ img {
     }
 }
 
+.news-letter-check {
+    background: hsla(133, 100%, 53%, 0.3);
+    border-radius: var(--brad-ss);
+    margin: var(--p-ss);
+    font-size: 0.9rem;
 
-/*#pointer:after {
-    content: "";
-    position: absolute;
-    left: 0;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid white;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}*/
+    color: aliceblue;
+}
 
-/*#pointer:before {
-    content: "";
-    position: absolute;
-    right: -20px;
-    bottom: 0;
-    width: 0;
-    height: 0;
-    border-left: 20px solid red;
-    border-top: 20px solid transparent;
-    border-bottom: 20px solid transparent;
-}*/
 
-/*#pointer.is-animated {}*/
+.showcase-form:last-child:hover:not(.text-area-placeholder) {
+    background: rgba(255, 0, 0, 0.01);
+    border-radius: var(--brad-ss);
+    transition: background 0.5s
+}
+
+
+/*.drop-us-a-line-hover {
+    border-radius: var(--brad-s);
+    transition: background 0.5s;
+    margin: var(--m-ss);
+
+}
+*/
+
+.drop-us-a-line-hover:hover {
+    background: var(--secondary-colour);
+    border-radius: var(--brad-ss);
+    color: #fff;
+    transition: background 0.5s
+}
+
+
+span {
+    background: linear-gradient(230deg, var(--red-colour), var(--green-colour), var(--primary-colour), var(--secondary-colour), var(--blue-colour));
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.ser {
+    margin: var(--m-xl);
+    padding: var(--p-xl);
+    font-size: var(--font-m);
+    font-weight: 700;
+    text-transform: uppercase;
+}
+
+.text-center {
+    /*  align-items: center;
+  justify-content: center;*/
+    word-wrap: wrap;
+    text-align: center;
+}
