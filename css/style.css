@@ -90,9 +90,8 @@
     --bs-2: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);
     --bs-3: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.2);
     --bs-4: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 100deg);
-    --bs-5: 1px 1px 50px 0px hsl(0, 0%, 50.196%, 0.1);
-    --bs-6: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);
-
+    /*--bs-5: 1px 1px 50px 0px hsl(0, 0%, 50.196%, 0.1);*/
+    --bs-5: 0px 2px 4px rgba(51, 55, 59, 0.08), 0px 1px 10px rgba(51, 55, 59, 0.06)
 }
 
 * {
@@ -101,6 +100,7 @@
     box-sizing: border-box;
     position: relative;
     font-family: 'Inter', sans-serif;
+
 
 }
 
@@ -902,19 +902,19 @@ span {
 
 .bank-svg {
     /*height: 10vh;*/
-    background: black;
+    background: white;
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
     height: 20%;
     width: 30%;
     top: 160%;
-    left: 100%;
+    left: 150%;
 }
 
 .business-1-svg {
     /*height: 10vh;*/
-    background: green;
+    background: white;
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
@@ -927,7 +927,7 @@ span {
 
 .bank-2-svg {
     /*height: 10vh;*/
-    background: pink;
+    background: white;
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
@@ -939,7 +939,7 @@ span {
 
 .bank-1-svg {
     /*height: 10vh;*/
-    background: red;
+    background: white;
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
