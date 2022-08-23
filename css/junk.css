@@ -177,3 +177,46 @@
     /*body {
     position: relative;
 }*/
+
+
+
+
+
+
+
+
+
+
+    Constraints In general,
+    we need to be really careful when setting fixed widths and heights. In the example above,
+    setting width: 15rem will,
+    in many cases,
+    break mobile layouts,
+    since it may produce a value too large for its container when the user cranks up their default font size ! We can often mitigate this by clamping it to a maximum of 100%: CSS .button {
+        max-width: 100%;
+    }
+
+    Similarly,
+    when it comes to heights,
+    we often want to use min-height instead of height. This allows the container to grow as tall as it needs,
+    in order to contain its children. This becomes important when a user scales up their font size,
+    since the text will wind up wrapping onto more lines. There's a really interesting trade-off here:
+
+    /*===================================================================================================================================*/
+    If we set the width to be 240px,
+    the button won't grow with font size, leading to line-wrapping and a taller button.
+If we set the width to be 15rem,
+    the button will grow wider along with the font size. Which approach is best? Well,
+    it depends on the circumstances ! In most cases,
+    I think it makes more sense to use rems. This preserves the button's proportions, its aesthetics. And it reduces the risk of an overflow, if the button has a particularly long word. 
+In some cases,
+    though,
+    pixels might be the better option. Maybe if you have a very specific layout in mind,
+    and vertical space is more plentiful than horizontal space.
+    /*==============================================================================================================================*/
+    USING THE REM UNIT FOR VERTIAL MARGIN IS GOOD PRACTICE.
+    /*==============================================================================================================================*/
+
+    USING THE REM UNIT FOR MEDIA QUERIES IS ALSO CONSIDERED GOOD PRACTICE.
+    /*==============================================================================================================================*/
+    I MIGHT USE THE PX UNIT FOR PADDINGS SHA.

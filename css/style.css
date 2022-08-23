@@ -21,6 +21,7 @@
 
     --gray: hsla(210, 16.667%, 97.647%, 1);
     --webtypes-section-colour-white: hsla(0, 0%, 100%, 1);
+    --h1-dark: #151A1E;
 
     /*==============================  PADDING  ==============================*/
     --p-ss: 0.5rem;
@@ -78,6 +79,29 @@
     --font-m: 1.5rem;
     --font-l: 1.5rem;
     --font-xl: 4rem;
+    --font-size: 62.5%;
+
+    /*==============================  !!HIGHLY EXPERIMENTING WITH THESE!  ==============================*/
+    --14px: 0.875rem;
+    --15px: 0.9375rem;
+    --16px: 1rem;
+    --17px: 1.0625rem;
+    --18px: 1.125rem;
+    --19px: 1.1875rem;
+    --20px: 1.25rem;
+    --21px: 1.3125rem;
+    /*EXAMPLE ON USAGE=> h1 {font-size: var(--21px);}*/
+    /*===================  OR  =============================*/
+    /*If you use a design system with a spacing scale, we can use this same trick:*/
+    /*html*/
+    --font-size-xs: 0.75rem;
+    --font-size-sm: 0.875rem;
+    --font-size-md: 1rem;
+    --font-size-lg: 1.125rem;
+    --font-size-xl: 1.3125rem;
+    --font-size-2xl: 1.5rem;
+    --font-size-3xl: 2.652rem;
+    --font-size-4xl: 4rem;
 
     /*==============================  BORDER RADIUS  ==============================*/
     --brad-ss: 0.5rem;
@@ -86,26 +110,38 @@
     --brad-l: 1rem;
     --brad-xl: 1rem;
 
-    --bs-1: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.2);
-    --bs-2: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5), 0 0px 0 1px rgba(10, 10, 10, 0.06);
-    --bs-3: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 0.2);
-    --bs-4: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1), 0 0px 0 1px rgba(10, 10, 10, 100deg);
+    /*==============================  BOX-SHADOWS  ==============================*/
+    --bs-1: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+        0 0px 0 1px rgba(10, 10, 10, 0.2);
+    --bs-2: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.5),
+        0 0px 0 1px rgba(10, 10, 10, 0.06);
+    --bs-3: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+        0 0px 0 1px rgba(10, 10, 10, 0.2);
+    --bs-4: 0 0.5em 1em -0.125em rgba(10, 10, 10, 0.1),
+        0 0px 0 1px rgba(10, 10, 10, 100deg);
     /*--bs-5: 1px 1px 50px 0px hsl(0, 0%, 50.196%, 0.1);*/
-    --bs-5: 0px 2px 4px rgba(51, 55, 59, 0.08), 0px 1px 10px rgba(51, 55, 59, 0.06)
+    --bs-5: 0px 2px 4px rgba(51, 55, 59, 0.08),
+        0px 1px 10px rgba(51, 55, 59, 0.06)
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    position: relative;
+    /*position: relative;*/
     font-family: 'Inter', sans-serif;
-    height: auto;
+    /*height: 100%;*/
+    /*font-size: 16px;*/
+    /*max-width: 100vw;*/
+
 
 }
 
+html {}
+
 body {
     /*height: 100vh;*/
+
 }
 
 /*=========================  HEADER && HERO-BOX && HELPERS  =========================*/
@@ -123,13 +159,16 @@ body {
     /*background: linear-gradient(230deg, var(--red-colour), var(--green-colour), var(--primary-colour), var(--secondary-colour), var(--blue-colour));*/
     background-image: linear-gradient(230deg, var(--red-colour-for-hero-box-image), var(--green-colour-for-hero-box-image), var(--primary-colour-for-hero-box-image), var(--secondary-colour-for-hero-box-image), var(--blue-colour-for-hero-box-image)), url(https://d2gz8p6ykzvfb0.cloudfront.net/storage/v4h0B8oRRETVfrlceC0vbGziNSzoX68dI3q0jwoZ.jpg);
     /*background-size: 1000% 1000%;*/
-    height: 100vh;
+    /*height: 100%;*/
     display: block;
     align-items: center;
+    /*margin-bottom: 8rem;*/
     justify-content: center;
     background-size: 100%;
     background-position: center;
     animation: lander 100s ease infinite;
+    /*box-shadow: var(--bs-2);*/
+
 }
 
 
@@ -158,6 +197,8 @@ body {
     grid-template-columns: 65% 35%;
     justify-content: end;
     align-items: end;
+
+
 }
 
 /*.hero-text-and-contact-card div {
@@ -246,11 +287,7 @@ nav ul li:nth-child(5) {
     height: 6%;
 }
 
-img {
-    width: 100%;
-    height: 100%;
-    border-radius: var(--brad-s);
-}
+
 
 .hero-text:not(#contact-us-swinging-billboard) {
     height: 2rem;
@@ -315,7 +352,6 @@ img {
     align-items: end;
     justify-content: end;
     top: 10rem;
-
     animation: transform 10s ease infinite;
 }
 
@@ -599,99 +635,6 @@ typ 300s alternate infinite;
 
 }
 
-#infinity-one:before,
-#infinity-one:after {
-    content: "";
-    font-size: var(--font-ss) !important;
-
-    box-sizing: content-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border: 5px solid #35c3ff;
-    border-radius: 50px 50px 0 50px;
-    transform: rotate(-45deg);
-    /*box-shadow: 0px 0px 10px 5px #ebf38b;*/
-    transition: all ease-in-out 2s;
-
-
-}
-
-#infinity-one:after {
-    left: 3rem;
-    right: 0;
-    border-radius: 50px 50px 50px 0;
-    transform: rotate(45deg);
-    transition: all ease-in-out 2s;
-
-
-}
-
-#infinity-one:hover:before,
-#infinity-one:hover:after {
-    transform: translatey(40px) translatex(40px) scale(1.4) rotate(-920deg);
-    transition: all ease-in-out 2s;
-
-
-}
-
-
-
-
-
-#infinity-two {
-    position: relative;
-    width: 212px;
-    height: 0px;
-    box-sizing: content-box;
-    top: -30rem;
-    left: 7rem;
-    transition: all ease-in-out 2s;
-    font-size: var(--font-ss);
-
-
-
-}
-
-#infinity-two:before,
-#infinity-two:after {
-    content: "";
-    font-size: var(--font-ss) !important;
-
-    box-sizing: content-box;
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 20px;
-    height: 20px;
-    border: 5px solid #35c3ff;
-    border-radius: 50px 50px 0 50px;
-    transform: rotate(-45deg);
-    /*box-shadow: 0px 0px 10px 5px #ebf38b;*/
-    transition: all ease-in-out 2s;
-
-
-}
-
-#infinity-two:after {
-    left: 3rem;
-    right: 0;
-    border-radius: 50px 50px 50px 0;
-    transform: rotate(45deg);
-    transition: all ease-in-out 2s;
-
-}
-
-#infinity-two:hover:before,
-#infinity-two:hover:after {
-    transform: translatey(40px) translatex(40px) scale(1.4) rotate(-920deg);
-    transition: all ease-in-out 2s;
-
-
-}
-
 #swinging-rod {
     width: 10px;
     height: 65px;
@@ -783,37 +726,74 @@ span {
     color: transparent;
 }
 
+
+
 .web-types-container {
-    /*margin: var(--m-xl);*/
-    /*padding: var(--p-xl);*/
-    /*font-size: var(--font-m);*/
     font-weight: 400;
     text-transform: uppercase;
-    height: 100vh;
     display: grid;
-    grid-template-columns: 2fr 2fr 2fr;
-    grid-template-rows: 2fr 2fr 2fr;
-    background: var(--webtypes-section-colour-white);
+    grid-template-columns: repeat(8, 1fr);
+    grid-template-rows: repeat(3, 1fr);
+    background: red !important;
     overflow: hidden;
+    width: 100% !important;
+    /*position: relative;*/
+
 }
+
+section {
+    /*overflow: hidden;
+    width: 100% !important;
+    */
+    /* height: 100vh;
+    margin-top: 5rem;*/
+}
+
+/*margin: var(--m-xl);*/
+/*position: relative;*/
+/*margin: 10rem;*/
+/* grid-template-columns: 2fr 2fr 2fr;
+    grid-template-rows: 2fr 2fr 2fr;*/
+/*padding: var(--p-xl);*/
+/*font-size: var(--font-m);*/
+/*background: var(--webtypes-section-colour-white);*/
+
 
 
 
 .webtypes-heading {
-    font-size: var(--font-l);
+    /*font-size: var(--font-l);*/
+    /*font-size: var(--font-size-lg);*/
     font-weight: 500;
     line-height: 2rem;
-    /*letter-spacing: 1px;*/
-    grid-row: 2/3;
-    grid-column: 1/6;
+    grid-row: 3/3;
+    grid-column: 1/9;
     padding: 10rem;
     text-align: center;
-    top: -11rem;
+    top: 110%;
+    position: absolute;
+
+    /*letter-spacing: 1px;*/
 
 }
 
 .webtypes-heading h1 {
-    font-size: 2.9rem;
+    font-size: 3rem;
+    font-size: var(--font-size-3xl);
+    color: var(--h1-dark);
+    margin: var(--m-ss);
+    line-height: 3rem;
+}
+
+
+.webtypes-heading p {
+    color: #1C1A1E;
+    font-size: var(--font-size-l);
+
+    margin-top: 2rem;
+    font-weight: 300;
+    line-height: 1.9rem;
+
 }
 
 /*.text-center {
@@ -829,218 +809,486 @@ span {
 
 .clip-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     z-index: 1;
     padding: var(--p-ss);
-    height: 25%;
-    width: 22%;
-    top: -210%;
-    left: 140%;
+    position: absolute;
+    height: 7%;
+    width: 3.5%;
+    top: 104%;
+    left: 94%;
+    height: 3rem;
+    width: 2.8rem;
+    top: 45.3rem;
+    left: 75rem;
 }
 
 .donation-charity-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
-    height: 85%;
-    width: 72%;
-    top: -270%;
-    left: 100%;
+    position: absolute;
+    height: 28%;
+    height: 12.3rem;
+    width: 10%;
+    width: 8rem;
+    top: 110%;
+    top: 48rem;
+    left: 92%;
+    left: 73.5rem;
+    /*left: 85%;*/
 }
 
 .folder-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-
     padding: var(--p-ss);
-    height: 85%;
-    width: 72%;
-    top: -283%;
-    left: 70%;
+    position: absolute;
+    height: 28%;
+    height: 12.3rem;
+    width: 10%;
+    width: 8rem;
+    top: 140%;
+    top: 61rem;
+    left: 97%;
+    left: 77.6rem;
+    /*left: 86%;*/
 }
 
 
 .folder1-svg {
     /*height: 10vh;*/
-    background: pink;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-
     padding: var(--p-ss);
-    height: 45%;
-    width: 35%;
-    top: -450%;
-    left: 70%;
+    position: absolute;
+    height: 28%;
+    width: 10%;
+    top: 140%;
+    left: 86%;
+    height: 12.3rem;
+    width: 8rem;
+    top: 61rem;
+    left: 68.8rem
+}
+
+.folder-wrap img {
+    overflow: hidden !important;
+    color: #000;
+    background: #000;
+    /*max-width: 90px;*/
 }
 
 .folder2-svg {
     /*height: 10vh;*/
-    background: red;
+    background: hsl(0, 0%, 10%, 1);
     box-shadow: var(--bs-5);
-    border-radius: var(--brad-ss);
+    border-radius: 0 0 0.5rem 0.5rem;
+    position: absolute;
 
     padding: var(--p-ss);
-    height: 85%;
-    width: 35%;
-    top: -870%;
-    left: -25%;
+    height: 10%;
+    width: 10%;
+    top: 100%;
+    left: 50%;
+    height: 4.5rem;
+    width: 8rem;
+    top: 43.5rem;
+    left: 40rem;
 }
 
 .folder3-svg {
     /*height: 10vh;*/
-    background: pink;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
-    border-radius: var(--brad-ss);
+    border-radius: 0 0 0.5rem 0.5rem;
+    position: absolute;
 
     padding: var(--p-ss);
-    height: 85%;
-    width: 35%;
-    top: -870%;
-    left: -50%;
+    height: 10%;
+    width: 10%;
+    top: 100%;
+    left: 80%;
+    height: 4.5rem;
+    width: 8rem;
+    top: 43.5rem;
+    left: 64rem;
+
 }
 
 .folder4-svg {
     /*height: 10vh;*/
-    background: pink;
+    background: hsl(0, 0%, 10%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-
+    position: absolute;
     padding: var(--p-ss);
-    height: 85%;
-    width: 35%;
-    top: -870%;
-    left: 30%;
+    height: 15%;
+    width: 15%;
+    top: 160%;
+    left: -9%;
+    height: 6.55rem;
+    width: 12rem;
+    top: 69.8rem;
+    left: -7rem;
 }
 
 .folder5-svg {
     /*height: 10vh;*/
-    background: pink;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
+    position: absolute;
 
-    padding: var(--p-ss);
-    height: 85%;
-    width: 35%;
-    top: -870%;
-    left: 20%;
+    padding:
+        /*var(--p-ss)*/
+        0.3rem;
+    height: 7%;
+    width: 3.5%;
+    top: 105%;
+    left: -1%;
+    height: 2.9rem;
+    width: 2.8rem;
+    top: 45.8rem;
+    left: -0.8rem;
 }
 
 .folder6-svg {
     /*height: 10vh;*/
-    background: pink;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-
+    position: absolute;
     padding: var(--p-ss);
-    height: 45%;
-    width: 35%;
-    top: -450%;
-    left: 70%;
+    /*padding: 0.3rem;*/
+    height: 22%;
+    width: 15%;
+    top: 116%;
+    left: -3%;
+    height: 9.6rem;
+    width: 11.9rem;
+    top: 50.4rem;
+    left: -2.4rem;
 }
 
 .folder7-svg {
     /*height: 10vh;*/
-    background: pink;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
+    position: absolute;
 
     padding: var(--p-ss);
-    height: 45%;
-    width: 35%;
-    top: -450%;
-    left: 70%;
+    padding: 0.3rem;
+    height: 16%;
+    width: 10%;
+    top: 114%;
+    left: 10%;
+    height: 7.4rem;
+    width: 8rem;
+    top: 49.6rem;
+    left: 8rem;
 }
 
 
 .blog-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    position: absolute;
+
+    padding: var(--p-ss);
+    padding: 0.3rem;
+    height: 7%;
+    width: 3.5%;
+    top: 140%;
+    left: 8%;
+    height: 3rem;
+    width: 2.9rem;
+    top: 61rem;
+    left: 7rem;
+}
+
+.blog1-svg {
+    /*height: 10vh;*/
+    background: hsl(0, 0%, 100%, 1);
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    position: absolute;
+
+    padding: var(--p-ss);
+    height: 11.5%;
+    width: 6%;
+    top: 145%;
+    left: 1%;
+}
+
+.blog2-svg {
+    /*height: 10vh;*/
+    background: hsl(0, 0%, 100%, 1);
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    position: absolute;
+    padding: var(--p-ss);
+    height: 15%;
+    width: 15%;
+    top: 160%;
+    left: 8%;
+}
+
+.blog3-svg {
+    /*height: 10vh;*/
+    background: hsl(0, 0%, 100%, 1);
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    position: absolute;
+    padding: var(--p-ss);
+    height: 16%;
+    width: 15%;
+    top: 180%;
+    left: -3%;
+}
+
+.blog4-svg {
+    /*height: 10vh;*/
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
-    height: 70%;
-    width: 70%;
-    top: 10%;
-    left: 40%;
+    position: absolute;
+    height: 6rem;
+    width: 9rem;
+    top: 32rem;
+    left: 30%;
 }
 
-.business-2-svg {
+img {
+    width: 100%;
+    /*height: 100%;*/
+    border-radius: var(--brad-s);
+    display: block;
+    max-width: 100%;
+
+}
+
+.blog5-svg {
     /*height: 10vh;*/
     background: white;
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    height: 20%;
-    width: 20%;
-    top: 20%;
-    right: 207%;
     padding: var(--p-ss);
+    position: absolute;
+    height: 7%;
+    width: 3.5%;
+    top: 177%;
+    left: 63%;
+}
+
+.blog6-svg {
+    /*height: 10vh;*/
+    background: white;
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    padding: var(--p-ss);
+    position: absolute;
+    height: 7%;
+    width: 3.5%;
+    top: 181%;
+    left: 14%;
+}
+
+.blog7-svg {
+    /*height: 10vh;*/
+    background: white;
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    padding: var(--p-ss);
+    position: absolute;
+    height: 15%;
+    width: 10.5%;
+    top: 167.5%;
+    left: 70.2%;
+}
+
+.business-2-svg {
+    /*height: 10vh;*/
+    background: hsl(0, 0%, 100%, 1);
+    box-shadow: var(--bs-5);
+    border-radius: 0.5rem 0 0.5rem 0rem;
+    position: absolute;
+    height: 28%;
+    height: 10rem;
+    width: 10%;
+    width: 8rem;
+    top: 172%;
+    top: 75rem;
+    left: 80%;
+    left: 62rem;
+    left: 98%;
+    left: 78.3rem;
+    /*overflow-y: hidden !important;*/
 }
 
 
 .business-man-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    height: 20%;
-    width: 20%;
-    top: 110%;
+    position: absolute;
     padding: var(--p-ss);
-    right: -50%;
+    position: absolute;
+    height: 9%;
+    width: 5.5%;
+    top: 180%;
+    left: 25%;
 }
 
 
 .bank-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
-    height: 20%;
-    width: 30%;
-    top: 160%;
-    left: 150%;
+    position: absolute;
+    height: 10%;
+    width: 6.5%;
+    top: 119%;
+    left: 83%;
 }
 
 .business-1-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
-    height: 50%;
-    width: 100%;
-    top: 50%;
-    right: 140%;
+    position: absolute;
+    height: 7.5%;
+    width: 4%;
+    top: 160.3%;
+    left: 81%;
 }
 
 
 .bank-2-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
-    height: 50%;
-    width: 70%;
-    top: -130%;
-    left: -136%;
+    position: absolute;
+    height: 15%;
+    width: 10.5%;
+    top: 110%;
+    left: 67%;
 }
 
 .bank-1-svg {
     /*height: 10vh;*/
-    background: white;
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     padding: var(--p-ss);
-    height: 50%;
-    width: 70%;
-    top: -140%;
-    left: 45%;
+    position: absolute;
+    height: 7.5%;
+    width: 4%;
+    top: 170%;
+    left: 93%;
 }
+
+.folder8-svg {
+    /*height: 10vh;*/
+    background: hsl(0, 0%, 100%, 1);
+    box-shadow: var(--bs-5);
+    border-radius: 0.5rem 0.5rem 0 0;
+    padding: var(--p-ss);
+    position: absolute;
+    height: 16%;
+    width: 40%;
+    top: 184%;
+    left: 30%;
+}
+
+/*.tester1 {
+    font-size: var(--14px);
+
+}
+
+.tester2 {
+    font-size: var(--15px);
+
+}
+
+.tester3 {
+    font-size: var(--16px);
+
+}
+
+.tester4 {
+    font-size: var(--17px);
+
+}
+
+.tester5 {
+    font-size: var(--18px);
+
+}
+
+.tester7 {
+    font-size: var(--19px);
+
+}
+
+.tester7 {
+    font-size: var(--20px);
+
+}*/
+/*.tester1 {
+    font-size: var(--font-size-xs);
+
+}
+
+.tester2 {
+    font-size: var(--font-size-sm);
+
+}
+
+.tester3 {
+    font-size: var(--font-size-md);
+
+}
+
+.tester4 {
+    font-size: var(--font-size-l);
+
+}
+
+.tester5 {
+    font-size: var(--font-size-lg);
+
+}
+
+.tester6 {
+    font-size: var(--font-size-2xl);
+
+}
+
+.tester7 {
+    font-size: var(--font-size-3xl);
+
+}
+
+.tester8 {
+    font-size: var(--font-size-4xl);
+
+}*/
