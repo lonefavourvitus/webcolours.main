@@ -771,6 +771,7 @@ section {
     padding: 10rem;
     text-align: center;
     top: 110%;
+    top: 47.7rem;
     position: absolute;
 
     /*letter-spacing: 1px;*/
@@ -781,7 +782,7 @@ section {
     font-size: 3rem;
     font-size: var(--font-size-3xl);
     color: var(--h1-dark);
-    margin: var(--m-ss);
+    margin: var(--font-size-md);
     line-height: 3rem;
 }
 
@@ -789,8 +790,9 @@ section {
 .webtypes-heading p {
     color: #1C1A1E;
     font-size: var(--font-size-l);
+    /*font-size: var(--16px);*/
 
-    margin-top: 2rem;
+    /*margin-top: 2rem;*/
     font-weight: 300;
     line-height: 1.9rem;
 
@@ -1029,6 +1031,10 @@ section {
     width: 6%;
     top: 145%;
     left: 1%;
+    height: 4.9rem;
+    width: 4.8rem;
+    top: 63rem;
+    left: 1rem;
 }
 
 .blog2-svg {
@@ -1042,6 +1048,10 @@ section {
     width: 15%;
     top: 160%;
     left: 8%;
+    height: 6.6rem;
+    width: 11.9rem;
+    top: 69.8rem;
+    left: 6.2rem;
 }
 
 .blog3-svg {
@@ -1055,6 +1065,10 @@ section {
     width: 15%;
     top: 180%;
     left: -3%;
+    height: 7.3rem;
+    width: 11.9rem;
+    top: 78.3rem;
+    left: -2.4rem;
 }
 
 .blog4-svg {
@@ -1066,8 +1080,9 @@ section {
     position: absolute;
     height: 6rem;
     width: 9rem;
-    top: 32rem;
+    top: 47rem;
     left: 30%;
+    left: 25rem;
 }
 
 img {
@@ -1090,6 +1105,10 @@ img {
     width: 3.5%;
     top: 177%;
     left: 63%;
+    height: 3rem;
+    width: 2.8rem;
+    top: 77.1rem;
+    left: 50.6rem;
 }
 
 .blog6-svg {
@@ -1103,6 +1122,10 @@ img {
     width: 3.5%;
     top: 181%;
     left: 14%;
+    height: 3rem;
+    width: 2.9;
+    top: 79rem;
+    left: 11rem;
 }
 
 .blog7-svg {
@@ -1116,6 +1139,10 @@ img {
     width: 10.5%;
     top: 167.5%;
     left: 70.2%;
+    height: 6.9rem;
+    width: 8rem;
+    top: 73rem;
+    left: 56.2rem;
 }
 
 .business-2-svg {
@@ -1150,6 +1177,10 @@ img {
     width: 5.5%;
     top: 180%;
     left: 25%;
+    height: 4rem;
+    width: 4.3rem;
+    top: 78.5rem;
+    left: 20rem;
 }
 
 
@@ -1164,6 +1195,10 @@ img {
     width: 6.5%;
     top: 119%;
     left: 83%;
+    height: 4.4rem;
+    width: 5rem;
+    top: 52rem;
+    left: 66.5rem;
 }
 
 .business-1-svg {
@@ -1177,6 +1212,10 @@ img {
     width: 4%;
     top: 160.3%;
     left: 81%;
+    height: 3.3rem;
+    width: 3.2rem;
+    top: 69.8rem;
+    left: 69rem;
 }
 
 
@@ -1191,6 +1230,10 @@ img {
     width: 10.5%;
     top: 110%;
     left: 67%;
+    height: 6.8rem;
+    width: 8.6rem;
+    top: 47.8rem;
+    left: 53.7rem;
 }
 
 .bank-1-svg {
@@ -1204,6 +1247,10 @@ img {
     width: 4%;
     top: 170%;
     left: 93%;
+    height: 3.2rem;
+    width: 3.3rem;
+    top: 74.2rem;
+    left: 74.3rem;
 }
 
 .folder8-svg {
@@ -1217,6 +1264,10 @@ img {
     width: 40%;
     top: 184%;
     left: 30%;
+    height: 7rem;
+    width: 32rem;
+    top: 80rem;
+    left: 24rem;
 }
 
 /*.tester1 {
