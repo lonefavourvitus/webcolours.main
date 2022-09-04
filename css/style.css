@@ -735,11 +735,157 @@ span {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr);
     background: red;
+    transition: transform 1s;
     overflow: hidden;
     width: 100%;
     /*position: relative;*/
 
 }
+
+.web-types-container img {
+    opacity: 0.8;
+}
+
+.web-types-container:hover img {
+    opacity: 1;
+    /*   transform: translateY(10px);
+   transition: all ease-in-out 1s;*/
+}
+
+
+
+/*==============================  WEBTYPES INDIVIDUAL HOVER PROPS STARTS HERE😖  ==============================*/
+
+.web-types-container:hover .folder-svg {
+    transform: translatex(-170px), rotateY(45deg);
+/*    transition: all ease-in-out 1s;*/}
+
+.web-types-container:hover .folder1-svg {
+    transform: translatey(110px, 30px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .folder2-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .folder3-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .folder4-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .folder5-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .folder6-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .folder8-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog1-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog2-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog3-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog4-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog5-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog6-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blog7-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .business-man-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .business-1-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .business-2-svg {
+    transform: translatey(10px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .clip-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blank-screen-1 {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blank-screen-2 {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blank-screen-3 {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blank-screen-4 {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .blank-screen-5 {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+.web-types-container:hover .donation-charity-svg {
+    transform: translatey(110px) translatex(20px);
+    transition: all ease-in-out 1s;
+}
+
+
 
 
 .webtypes-heading {
@@ -752,6 +898,7 @@ span {
     padding: 10rem;
     text-align: center;
     top: 110%;
+    opacity: 1 !important;
     top: 47.7rem;
     position: absolute;
 
@@ -817,7 +964,6 @@ span {
     background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    padding: var(--p-ss);
     position: absolute;
     height: 28%;
     height: 12.3rem;
@@ -835,7 +981,7 @@ span {
     background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     position: absolute;
     height: 28%;
     height: 12.3rem;
@@ -854,7 +1000,7 @@ span {
     background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     position: absolute;
     height: 28%;
     width: 10%;
@@ -875,12 +1021,11 @@ span {
 
 .folder2-svg {
     /*height: 10vh;*/
-    background: hsl(0, 0%, 10%, 1);
+    background: white;
     box-shadow: var(--bs-5);
     border-radius: 0 0 0.5rem 0.5rem;
     position: absolute;
-
-    padding: var(--p-ss);
+    padding: 0px;
     height: 10%;
     width: 10%;
     top: 100%;
@@ -898,7 +1043,7 @@ span {
     border-radius: 0 0 0.5rem 0.5rem;
     position: absolute;
 
-    padding: var(--p-ss);
+    padding: 0;
     height: 10%;
     width: 10%;
     top: 100%;
@@ -912,11 +1057,11 @@ span {
 
 .folder4-svg {
     /*height: 10vh;*/
-    background: hsl(0, 0%, 10%, 1);
+    background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     position: absolute;
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     height: 15%;
     width: 15%;
     top: 160%;
@@ -933,10 +1078,7 @@ span {
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     position: absolute;
-
-    padding:
-        /*var(--p-ss)*/
-        0.3rem;
+    padding: var(--p-ss);
     height: 7%;
     width: 3.5%;
     top: 105%;
@@ -953,7 +1095,7 @@ span {
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     position: absolute;
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     /*padding: 0.3rem;*/
     height: 22%;
     width: 15%;
@@ -973,7 +1115,7 @@ span {
     border-radius: var(--brad-ss);
     position: absolute;
 
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     padding: 0.3rem;
     height: 16%;
     width: 10%;
@@ -994,13 +1136,13 @@ span {
     border-radius: var(--brad-ss);
     position: absolute;
 
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     padding: 0.3rem;
     height: 7%;
     width: 3.5%;
     top: 140%;
     left: 8%;
-    height: 3rem;
+    height: 2.7rem;
     width: 2.9rem;
     top: 61rem;
     left: 7rem;
@@ -1013,7 +1155,7 @@ span {
     border-radius: var(--brad-ss);
     position: absolute;
 
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     padding: 0.3rem;
     height: 7%;
     width: 3.5%;
@@ -1025,22 +1167,7 @@ span {
     left: 58rem;
 }
 
-.blank-screen-5 {
-    background: #F2F5F8;
-    box-shadow: var(--bs-5);
-    border-radius: var(--brad-ss);
-    position: absolute;
-    padding: var(--p-ss);
-    padding: 0.3rem;
-    height: 7%;
-    width: 3.5%;
-    top: 140%;
-    left: 8%;
-    height: 5rem;
-    width: 6.9rem;
-    top: 74rem;
-    left: 28rem;
-}
+
 
 .blog1-svg {
     /*height: 10vh;*/
@@ -1054,7 +1181,7 @@ span {
     width: 6%;
     top: 145%;
     left: 1%;
-    height: 4.9rem;
+    height: 4.6rem;
     width: 4.8rem;
     top: 63rem;
     left: 1rem;
@@ -1066,7 +1193,7 @@ span {
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     position: absolute;
-    padding: var(--p-ss);
+    padding: 0;
     height: 15%;
     width: 15%;
     top: 160%;
@@ -1083,7 +1210,7 @@ span {
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
     position: absolute;
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     height: 16%;
     width: 15%;
     top: 180%;
@@ -1099,7 +1226,7 @@ span {
     background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     position: absolute;
     height: 6rem;
     width: 9rem;
@@ -1123,7 +1250,7 @@ img {
     background: white;
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     position: absolute;
     height: 7%;
     width: 3.5%;
@@ -1147,27 +1274,11 @@ img {
     top: 181%;
     left: 14%;
     height: 3rem;
-    width: 2.9;
+    width: 3rem;
     top: 79rem;
     left: 11rem;
 }
 
-.blank-screen-4 {
-    /*height: 10vh;*/
-    background: #F2F5F8;
-    box-shadow: var(--bs-5);
-    border-radius: var(--brad-ss);
-    padding: var(--p-ss);
-    position: absolute;
-    height: 15%;
-    width: 10.5%;
-    top: 167.5%;
-    left: 70.2%;
-    height: 6.9rem;
-    width: 8rem;
-    top: 73rem;
-    left: 56.2rem;
-}
 
 .business-2-svg {
     /*height: 10vh;*/
@@ -1180,11 +1291,11 @@ img {
     width: 10%;
     width: 8rem;
     top: 172%;
-    top: 75rem;
+    top: 74rem;
     left: 80%;
-    left: 62rem;
+    left: 61rem;
     left: 98%;
-    left: 78.3rem;
+    left: 78.7rem;
     /*overflow-y: hidden !important;*/
 }
 
@@ -1225,23 +1336,6 @@ img {
     left: 66.5rem;
 }
 
-.business-1-svg {
-    /*height: 10vh;*/
-    background: hsl(0, 0%, 100%, 1);
-    box-shadow: var(--bs-5);
-    border-radius: var(--brad-ss);
-    padding: var(--p-ss);
-    position: absolute;
-    height: 7.5%;
-    width: 4%;
-    top: 160.3%;
-    left: 81%;
-    height: 3.3rem;
-    width: 3.2rem;
-    top: 69.8rem;
-    left: 69rem;
-}
-
 
 .blank-screen-3 {
     /*height: 10vh;*/
@@ -1260,12 +1354,66 @@ img {
     left: 53.7rem;
 }
 
+
+.blank-screen-4 {
+    /*height: 10vh;*/
+    background: #F2F5F8;
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    padding: var(--p-ss);
+    padding: 0.3rem;
+    position: absolute;
+    height: 15%;
+    width: 10.5%;
+    top: 167.5%;
+    left: 70.2%;
+    height: 6.9rem;
+    width: 8rem;
+    top: 73rem;
+    left: 56.2rem;
+}
+
+.blank-screen-5 {
+    background: #F2F5F8;
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    position: absolute;
+    padding: var(--p-ss);
+    padding: 0.3rem;
+    height: 7%;
+    width: 3.5%;
+    top: 140%;
+    left: 8%;
+    height: 5rem;
+    width: 6.9rem;
+    top: 74rem;
+    left: 28rem;
+}
+
+.business-1-svg {
+    /*height: 10vh;*/
+    background: hsl(0, 0%, 100%, 1);
+    box-shadow: var(--bs-5);
+    border-radius: var(--brad-ss);
+    /*padding: var(--p-ss);*/
+    position: absolute;
+    height: 7.5%;
+    width: 4%;
+    top: 160.3%;
+    left: 81%;
+    height: 3.3rem;
+    width: 3.2rem;
+    top: 69.8rem;
+    left: 69rem;
+}
+
+
 .bank-1-svg {
     /*height: 10vh;*/
     background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: var(--brad-ss);
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     position: absolute;
     height: 7.5%;
     width: 4%;
@@ -1282,7 +1430,7 @@ img {
     background: hsl(0, 0%, 100%, 1);
     box-shadow: var(--bs-5);
     border-radius: 0.5rem 0.5rem 0 0;
-    padding: var(--p-ss);
+    /*padding: var(--p-ss);*/
     position: absolute;
     height: 16%;
     width: 40%;
@@ -1293,6 +1441,7 @@ img {
     top: 81rem;
     left: 24rem;
 }
+
 
 /*.tester1 {
     font-size: var(--14px);
@@ -1352,7 +1501,6 @@ img {
     font-size: var(--font-size-lg);
 
 }
-
 .tester6 {
     font-size: var(--font-size-2xl);
 
@@ -1367,3 +1515,16 @@ img {
     font-size: var(--font-size-4xl);
 
 }*/
+
+.for-info {
+    /*height: 100%;*/
+    margin-top: 50rem;
+    background: hsla(123, 50%, 50%, 1.0);
+    /* top: 100;
+    bottom: 100;*/
+}
+
+.infographics-and-information-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
