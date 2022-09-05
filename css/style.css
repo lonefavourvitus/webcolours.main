@@ -735,7 +735,7 @@ span {
     grid-template-columns: repeat(8, 1fr);
     grid-template-rows: repeat(3, 1fr);
     background: red;
-    transition: transform 1s;
+    transition: all ease-in-out 1s;
     overflow: hidden;
     width: 100%;
     /*position: relative;*/
@@ -744,10 +744,14 @@ span {
 
 .web-types-container img {
     opacity: 0.8;
+    transition: all ease-in-out 1s;
+
 }
 
 .web-types-container:hover img {
     opacity: 1;
+    transition: all ease-in-out 1s;
+
     /*   transform: translateY(10px);
    transition: all ease-in-out 1s;*/
 }
@@ -757,66 +761,82 @@ span {
 /*==============================  WEBTYPES INDIVIDUAL HOVER PROPS STARTS HERE😖  ==============================*/
 
 .web-types-container:hover .folder-svg {
-    transform: translatex(-170px), rotateY(45deg);
-/*    transition: all ease-in-out 1s;*/}
+    transform: translateX(-400px);
+    transition: all ease-in-out 0.5s;
+    z-index: -20;
+}
 
 .web-types-container:hover .folder1-svg {
-    transform: translatey(110px, 30px) translatex(20px);
+    transform: translateX(-200px);
     transition: all ease-in-out 1s;
+    z-index: -10;
 }
 
 .web-types-container:hover .folder2-svg {
-    transform: translatey(10px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translateY(300px) translateX(-110px);
+    transition: all ease-in-out 0.5s;
+    z-index: -10;
+
 }
 
 .web-types-container:hover .folder3-svg {
-    transform: translatey(110px) translatex(20px);
+    transform: translateY(300px) translateX(-500px);
     transition: all ease-in-out 1s;
+    z-index: -10;
+
+
 }
 
 .web-types-container:hover .folder4-svg {
-    transform: translatey(10px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translateY(-130px) translateX(500px);
+    transition: all ease-in-out 0.5s;
+    z-index: -10;
+
 }
 
 .web-types-container:hover .folder5-svg {
-    transform: translatey(110px) translatex(20px);
+    transform: translateY(230px) translateX(500px);
     transition: all ease-in-out 1s;
+    z-index: -10;
+
 }
 
 .web-types-container:hover .folder6-svg {
-    transform: translatey(10px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translateY(170px) translateX(600px);
+    transition: all ease-in-out 0.5s;
+    z-index: -10;
 }
 
 .web-types-container:hover .folder8-svg {
-    transform: translatey(110px) translatex(20px);
+    transform: translateY(-320px);
     transition: all ease-in-out 1s;
+    z-index: -10;
 }
 
 .web-types-container:hover .blog-svg {
-    transform: translatey(10px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translateX(250px);
+    transition: all ease-in-out 0.7s;
+    z-index: -10;
 }
 
 .web-types-container:hover .blog1-svg {
-    transform: translatey(110px) translatex(20px);
+    transform: translateY(-30px) translateX(270px);
     transition: all ease-in-out 1s;
+    z-index: -10;
 }
 
 .web-types-container:hover .blog2-svg {
-    transform: translatey(10px) translatex(20px);
+    transform: translateY(-100px) translateX(270px);
     transition: all ease-in-out 1s;
 }
 
 .web-types-container:hover .blog3-svg {
-    transform: translatey(110px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translateY(-270px) translateX(500px);
+    transition: all ease-in-out 0.4s;
 }
 
 .web-types-container:hover .blog4-svg {
-    transform: translatey(10px) translatex(20px);
+    transform: translateY(230px) translateX(20px);
     transition: all ease-in-out 1s;
 }
 
@@ -826,18 +846,19 @@ span {
 }
 
 .web-types-container:hover .blog6-svg {
-    transform: translatey(10px) translatex(20px);
+    transform: translateY(-270px) translateX(500px);
     transition: all ease-in-out 1s;
 }
 
 .web-types-container:hover .blog7-svg {
-    transform: translatey(110px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translateY(-300px) translateX(-270px);
+    transition: all ease-in-out 0.8s;
+    z-index: -11;
 }
 
 .web-types-container:hover .business-man-svg {
-    transform: translatey(10px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translateY(-250px) translateX(370px);
+    transition: all ease-in-out 0.6s;
 }
 
 .web-types-container:hover .business-1-svg {
@@ -846,13 +867,14 @@ span {
 }
 
 .web-types-container:hover .business-2-svg {
-    transform: translatey(10px) translatex(20px);
+    transform: translateY(-230px) translateX(-500px);
     transition: all ease-in-out 1s;
 }
 
 .web-types-container:hover .clip-svg {
-    transform: translatey(110px) translatex(20px);
-    transition: all ease-in-out 1s;
+    transform: translatey(280px) translatex(-400px);
+    transition: all ease-in-out 0.35s;
+    z-index: -9;
 }
 
 .web-types-container:hover .blank-screen-1 {
@@ -881,8 +903,9 @@ span {
 }
 
 .web-types-container:hover .donation-charity-svg {
-    transform: translatey(110px) translatex(20px);
+    transform: translateY(170px) translateX(-470px) rotate(90deg);
     transition: all ease-in-out 1s;
+    z-index: -9;
 }
 
 
