@@ -23,6 +23,14 @@
     --webtypes-section-colour-white: hsla(0, 0%, 100%, 1);
     --h1-dark: #151A1E;
 
+
+    /*==============================  PADDING  ==============================*/
+    --warmer-pallete-for-infographics-red: hsla(0.62, 81.59%, 53.14%, 1);
+    --warmer-pallete-for-infographics-secondary-colour-gold: hsla(37.69, 81.89%, 52.35%, 1);
+    --warmer-pallete-for-infographics-green: hsla(107.27, 72.05%, 55.1%, 1);
+    --warmer-pallete-for-infographics-blue: hsla(240.9, 68.21%, 61.76%, 1);
+    --warmer-pallete-for-infographics-primary-colour-purple: hsla(314.93, 85.06%, 52.75%, 1);
+
     /*==============================  PADDING  ==============================*/
     --p-ss: 0.5rem;
     --p-s: 1rem;
